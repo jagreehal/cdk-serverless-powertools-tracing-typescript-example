@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "target": "es2019",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@/functions/*": ["src/functions/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/test/*": ["./test/*"],
+      "@/db/*": ["src/db/*"],
+      "@/models/*": ["src/model/*"],
+      "@/config": ["src/config"]
+    }
+  },
+  "include": ["**/*.ts", "package.json"],
+  "exclude": ["cdk.out", "node_modules", "_lambda"]
+}
