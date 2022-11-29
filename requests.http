@@ -1,5 +1,5 @@
 ### Record patient tempreature
-POST  https://in1ls9tsob.execute-api.eu-west-2.amazonaws.com/prod/patient/1
+POST   https://j6xabwkdr7.execute-api.eu-west-2.amazonaws.com/prod/patient/1
 content-type: application/json
 
 {
