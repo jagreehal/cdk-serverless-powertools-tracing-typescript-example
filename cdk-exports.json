@@ -1,6 +1,6 @@
 {
-  "dev-serverless-tracing-example": {
-    "APIURL": "https://in1ls9tsob.execute-api.eu-west-2.amazonaws.com/prod/",
-    "devserverlesstracingexampleapiEndpoint2C071BB3": "https://in1ls9tsob.execute-api.eu-west-2.amazonaws.com/prod/"
+  "dev-patient-health-tracing": {
+    "APIURL": "https://j6xabwkdr7.execute-api.eu-west-2.amazonaws.com/prod/",
+    "devpatienthealthtracingapiEndpoint739086CB": "https://j6xabwkdr7.execute-api.eu-west-2.amazonaws.com/prod/"
   }
 }

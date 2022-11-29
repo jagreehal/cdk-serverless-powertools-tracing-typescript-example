@@ -1,6 +1,5 @@
-import config from '../package.json';
 export const ENV = process.env.ENV || 'dev';
-export const STACK_NAME = `${ENV}-${config.name}`;
+export const STACK_NAME = `${ENV}-patient-health-tracing`;
 export const TABLE_NAME = `${STACK_NAME}-table`;
 export const AWS_REGION = process.env.AWS_REGION;
 export const BUCKET_NAME = `${STACK_NAME}-s3-bucket`;

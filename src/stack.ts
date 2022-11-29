@@ -9,6 +9,7 @@ import {
   PATIENT_TEMPERATURE_LOW_RULE,
   PATIENT_TEMPERATURE_RECORDED_RULE,
   REST_API,
+  STACK_NAME,
   TABLE_NAME,
 } from './config';
 import { EventBus, Rule } from 'aws-cdk-lib/aws-events';
@@ -23,11 +24,11 @@ export class ServerlessTracingExample extends cdk.Stack {
 
     const envVariables = {
       AWS_ACCOUNT_ID: Stack.of(this).account,
-      POWERTOOLS_SERVICE_NAME: 'serverless-tracing-example',
+      POWERTOOLS_SERVICE_NAME: STACK_NAME,
       POWERTOOLS_LOGGER_LOG_LEVEL: 'WARN',
       POWERTOOLS_LOGGER_SAMPLE_RATE: '0.01',
       POWERTOOLS_LOGGER_LOG_EVENT: 'true',
-      POWERTOOLS_METRICS_NAMESPACE: 'jagreehal',
+      POWERTOOLS_METRICS_NAMESPACE: 'jagreehal.com',
     };
 
     const eventBus = new EventBus(this, EVENT_BUS_NAME, {
